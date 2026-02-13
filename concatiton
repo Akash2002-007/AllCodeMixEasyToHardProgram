@@ -1,0 +1,18 @@
+package com.nit;
+
+public class Concat {
+ static String concatiton(String...str) {
+	  
+	 String result=" ";
+	 
+	 for(String s: str) {
+		 result+=s;
+	 }
+	 return result;
+ }
+ public static void main(String[] args) {
+	 String result=concatiton("Hello", "My", "Love", "Queen");
+	 
+	 System.out.println(result);
+ }
+}
