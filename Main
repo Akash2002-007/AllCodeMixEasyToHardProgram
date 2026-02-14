@@ -1,0 +1,6 @@
+class Main {
+    public static void main(String[] args) {
+        int num=8,num1=89;
+        System.out.println(num>num1?"min":"max");
+    }
+}
