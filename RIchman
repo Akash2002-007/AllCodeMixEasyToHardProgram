@@ -1,0 +1,12 @@
+package com.dsa.array;
+
+public class RIchman {
+	 
+	       
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int a=9;
+    System.out.println(a);
+	}
+
+}
