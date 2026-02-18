@@ -1,0 +1,13 @@
+class Main {
+    String name="sjyio";
+    int age=90;
+    
+    void show(){
+        System.out.println(name+":"+age);
+    }
+    public static void main(String[] args){
+        Main sc=new Main();
+        sc.show();
+        
+    }
+}
