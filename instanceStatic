@@ -1,0 +1,17 @@
+package com.nit.nito;
+
+public class StaInsCode {
+    int a=90;
+    static int b=89;
+    
+    void display() {
+    	System.out.println(a+":"+b);
+    }
+    
+    public static void main(String[] args) {
+    	StaInsCode  sc=new StaInsCode();
+    	//sc.display();
+    	System.out.println(sc.a);
+    	System.out.println(sc.b);
+    }
+}
