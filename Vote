@@ -1,0 +1,12 @@
+public class Vote {
+	public static void main(String[] agrs) {
+		int a=18;
+		int b=89;
+		  if(a>=18 && b<=98) {
+			  System.out.println("It is eligiable");
+		  }else {
+			  System.out.println("It is not eligiable");
+		  }
+	}
+  
+}
