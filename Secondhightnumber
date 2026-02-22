@@ -1,0 +1,21 @@
+package com.nit.nito;
+
+public class Secondhightnumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int []a= {2,4,7,8,97,98,58};
+       int largest=Integer.MIN_VALUE;
+       int Secondlargest=Integer.MIN_VALUE;
+       for(int i:a) {
+    	   if(i>largest) {
+    		  Secondlargest=largest;
+    		  largest=i;
+    	   }else if(i>Secondlargest && i!=largest) {
+    		   Secondlargest=i;
+    	   }
+       }
+       System.out.println(" "+Secondlargest);
+	}
+
+}
