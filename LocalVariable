@@ -1,0 +1,13 @@
+package com.nitio.variable;
+
+public class LocalVariable {
+      
+	void show() {
+		int a=20;
+		System.out.println("a:"+a);
+	}
+	public static void main(String[] args) {
+		LocalVariable sc=new LocalVariable();
+		sc.show();
+	}
+}
