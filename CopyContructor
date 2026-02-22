@@ -1,0 +1,28 @@
+package com.nit.nito;
+
+public class EngStudent {
+    int id;
+    String name;
+    
+    public EngStudent(int id ,String name) {
+    	this.id=id;
+    	this.name=name;
+    }
+    EngStudent(EngStudent e) {
+		// TODO Auto-generated constructor stub
+    	id=e.id;
+    	name=e.name;
+    	
+	}
+    void display() {
+    	System.out.println(id+":"+name);
+    }
+    public static void main(String[] args) {
+    	EngStudent s1=new EngStudent(89,"Sktyu");
+    	
+    	EngStudent s2=new EngStudent(s1);
+    	s1.display();
+    	s2.display();
+    	
+    }
+}
