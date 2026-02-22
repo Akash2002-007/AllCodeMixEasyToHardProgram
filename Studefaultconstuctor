@@ -1,0 +1,17 @@
+package com.nit.nito;
+
+public class Studefaultconstuctor {
+      
+	int id=90;
+	String name="skyio";
+	
+	void display(){
+		System.out.println(id+": "+name);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Studefaultconstuctor s=new Studefaultconstuctor();
+         s.display();
+	}
+
+}
