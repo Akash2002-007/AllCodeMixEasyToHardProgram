@@ -1,0 +1,11 @@
+package com.nit.nito;
+
+public class AllRrappclass {
+	
+     
+     public static void main(String[] args) {
+    	 Integer a=89;
+         int b=a;
+    	 System.out.println(b);
+     }
+}
