@@ -1,0 +1,12 @@
+public class ShodowVariable99 {
+      int a=90;
+      
+      void show() {
+    	  int a=89;
+    	  System.out.println(a);
+      }
+      public static void main(String[] args) {
+    	  ShodowVariable99 sc=new ShodowVariable99();
+    	  sc.show();
+      }
+}
