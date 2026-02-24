@@ -1,0 +1,15 @@
+package com.nitio.variable;
+
+public class Counter89 {
+     static int count=89;
+     
+     Counter89(){
+    	 count++;
+     }
+     public static void main(String[] args) {
+    	 Counter89 sc=new Counter89();
+    	 Counter89 sc1=new Counter89();
+    	 Counter89 sc2=new Counter89();
+    	 System.out.println(":"+count);
+     }
+}
