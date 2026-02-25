@@ -1,0 +1,29 @@
+package com.dsa.array;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class ArrayExTop11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int []arr= {2,3,9,2,8,7,3,2};
+      for(int i=0;i<arr.length;i++) {
+    	 HashSet<Integer> set=new HashSet<>();
+    	HashSet<Integer> duplicate=new HashSet<>();
+    	
+    	 for(int n:arr) {
+    		 if(!set.add(n)) {
+    			 duplicate.add(n);
+    			 
+    		 }
+    		 System.out.println(" "+duplicate);
+    		 Object[] array=duplicate.toArray();
+    		 System.out.println(" "+Arrays.toString(array));
+    		 
+    	 }
+    	 
+      }
+	}
+
+}
