@@ -1,0 +1,16 @@
+package javaandwrapperclass;
+
+public class Test3 {
+
+	public static void print(int a) { 
+		System.out.println("Primitive: " + a); 
+		}
+	public static void print(Integer a) { 
+		System.out.println("Wrapper: " + a);
+		}
+	public static void main(String[] args) {
+	Integer num = 10;
+	print(num);
+	}
+
+}
