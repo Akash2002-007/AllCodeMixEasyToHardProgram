@@ -1,0 +1,17 @@
+package javaandwrapperclass;
+
+public class Count {
+     public static void main(String[] args) {
+    	 int num=123;
+    	 count(num);
+    	
+     }
+     public static void count(int num) {
+    	 int count=0;
+    	 while(num>0) {
+    		 count++;
+    		 num=num/10;
+    	 }
+    	 System.out.println(count);
+     }
+}
