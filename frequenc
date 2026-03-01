@@ -1,0 +1,24 @@
+package com.dsa.Topc;
+
+import java.util.*;
+
+public class frequenc {
+
+    public static void main(String[] args) {
+
+        int num = 9598;
+
+        Map<Integer,Integer> map = new HashMap<>();
+
+        while(num > 0) {
+
+            int digit = num % 10;   // extract last digit
+
+            map.put(digit, map.getOrDefault(digit, 0) + 1);
+
+            num = num / 10;   // remove last digit
+        }
+
+        System.out.println(map);
+    }
+}
