@@ -1,0 +1,12 @@
+package com.nitio.variable;
+
+public class InstanceVar89 {
+       int a;
+       void show() {
+    	   System.out.println(a);
+       }
+       public static void main(String[] args) {
+    	   InstanceVar89 sc=new InstanceVar89();
+    	   sc.show();
+       }
+}
