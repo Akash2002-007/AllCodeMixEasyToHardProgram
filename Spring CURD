@@ -1,0 +1,113 @@
+package com.example.demo;
+
+public class Student8 {
+  private int id;
+  private String name;
+  private int marks;
+  public Student8(int id, String name, int marks) {
+	super();
+	this.id = id;                            
+	this.name = name;
+	this.marks = marks;                                    //BLC
+  }
+  public int getId() {
+	return id;
+  }
+  public void setId(int id) {
+	this.id = id;
+  }
+  public String getName() {
+	return name;
+  }
+  public void setName(String name) {
+	this.name = name;
+  }
+  public int getMarks() {
+	return marks;
+  }
+  public void setMarks(int marks) {
+	this.marks = marks;
+  }  
+}
+
+package com.example.demo;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+@Configuration
+public class JdbceConfig {
+	@Bean
+	public DriverManagerDataSource addDMD() {
+		DriverManagerDataSource add = new DriverManagerDataSource();
+		add.setDriverClassName("com.mysql.cj.jdbc.Driver");
+		add.setUrl("jdbc:mysql://localhost:3306/testdb");
+		add.setUsername("root");                              //Config
+		add.setPassword("Akash959827");
+		return add;
+
+	}
+
+	@Bean
+	public JdbcTemplate jdbcTemplate() {
+		return new JdbcTemplate(addDMD());
+	}
+}
+
+Main
+package com.example.demo;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+@SpringBootApplication
+public class AllCurdSpringAllLab8Application {
+
+	public static void main(String[] args) {
+      int id=109;
+      String name="Rich";
+      int marks=890;
+      
+      
+      AnnotationConfigApplicationContext con=new AnnotationConfigApplicationContext(JdbceConfig.class);
+      JdbcTemplate jdtop=con.getBean(JdbcTemplate.class);
+      
+      //insert query
+      String sql="insert into Student8 values(?,?,?)";
+      int count= jdtop.update(sql,id,name,marks);
+      
+      if(count>0) {
+    	  System.out.println("insert to succesfully");
+      }
+      else {
+    	  System.out.println("insert Error");
+      }
+      System.out.println("=============================================");
+//      //update query
+//      String update="update Student8 set name=? where id=?";
+//      int updated=jdtop.update(update,name,id);
+//      
+//      if(updated>0) {
+//    	  System.out.println("Update Sucessfully");
+//      }else {
+//    	  System.out.println("Update Error");
+//      }
+//      System.out.println("==============================================");
+      //delete query
+//      String delete="delete from Student8 where id=?";
+//      int deleted=jdtop.update(delete,id);
+//      
+//      if(deleted>0){
+//    	  System.out.println("Delete Successfully"); 
+//      }
+//      else {
+//    	  System.out.println("Delete Error");
+//      }
+//      System.out.println("========================================");
+	}
+
+}
+
