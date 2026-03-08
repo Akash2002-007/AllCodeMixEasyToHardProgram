@@ -1,0 +1,15 @@
+package com.nitio.variable;
+
+public class Shadowing {
+    int a=9;
+    void show() {
+    	int a=89;
+    	System.out.println(a);
+    	System.out.println(this.a);
+    }
+    public static void main() {
+    	Shadowing sc=new Shadowing();
+    	sc.show();
+    	
+    }
+}
