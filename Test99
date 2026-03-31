@@ -1,0 +1,18 @@
+package com.nit.multithreadandexception;
+
+class MyException extends Exception {
+
+}
+public class Test99{
+	public static void main(String[] args) {
+		try {
+			int a=89;
+			if(a<90) {
+				throw new MyException();
+			}
+			System.out.println("Eligible");
+		}catch(MyException e) {
+			System.out.println("Not Eligiable");
+		}
+	}
+}
