@@ -1,0 +1,25 @@
+package com.nit.multithreadandexception;
+
+public class Bird {
+     public static void main(String[] args) {
+		     Bird b=new Bird();
+		        b.fly();
+		       b.eat();
+	 }
+	void fly() {
+		System.out.println("fly");
+	}
+ 	void eat(){
+	    System.out.println("I Love Apple Java");
+ 	}
+}
+class Parrot extends Bird{
+	 void fly() {
+		 System.out.println("fly");
+	 }
+	 void eat() {
+		 System.out.println("eating");
+	 }
+	 
+	
+}
