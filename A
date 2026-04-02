@@ -1,0 +1,27 @@
+package com.nit.multithreadandexception;
+
+public interface A {
+        default void show() {
+        	System.out.println("dhow all deatils");
+        }
+        interface B{
+        	
+         default void display(){
+        	 System.out.println("I like you");
+         }
+        
+         class Test implements A,B{
+        	 public void show() {
+        		 System.out.println("Show ");
+        	 }
+        	 public void display() {
+        		 System.out.println("display");
+        	 }
+         }
+         public static void main(String[] args) {
+        	 Test t=new Test();
+        	   t.show();
+        	   t.display();
+         }
+}
+        }
