@@ -1,0 +1,18 @@
+package com.nit.evenandodd;
+
+public class EvenOd9{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   int num=89;
+		
+      
+    	   if((num & 1)==0) {
+    		   System.out.println("Even");
+    	   }else {
+    		   System.out.println("Odd");
+    	   
+       
+	}}
+
+}
