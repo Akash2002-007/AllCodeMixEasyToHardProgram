@@ -1,0 +1,16 @@
+package com.nit.multithreadandexception;
+
+public class Test8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Test t1=new Test();
+     
+     Thread tA=new Thread(()->t1.display("A"));
+     Thread tB=new Thread(()->t1.display("B"));
+     
+     tA.start();
+     tB.start();
+	}
+
+}
