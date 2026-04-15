@@ -1,0 +1,24 @@
+package com.nit.set;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class RemoveDuplicateList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   List<Integer> number=Arrays.asList(10,20,30,40,50,10,40);
+   
+   System.out.println(" "+ number);
+   
+   Set<Integer> uniqueSet=new LinkedHashSet<>(number);
+   
+   List<Integer> uniqueList=new ArrayList<>(uniqueSet);
+   
+   System.out.println(" "+uniqueList);
+	}
+
+}
