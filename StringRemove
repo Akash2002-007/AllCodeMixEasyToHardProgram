@@ -1,0 +1,6 @@
+public class StringRemove {
+public static void main(String[] args) {
+       String str="Google";
+       str.chars().distinct().forEach(ch->System.out.println((char)ch));
+}
+}
