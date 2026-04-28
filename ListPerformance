@@ -1,0 +1,46 @@
+package com.nit.cf;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class ListPerformance {
+    public static void main(String[] args) {
+        int n = 100000;
+
+        // ArrayList
+        List<Integer> arrayList = new ArrayList<>();
+        long start = System.nanoTime();
+
+        for (int i = 0; i < n; i++) {
+            arrayList.add(i);
+        }
+        long end = System.nanoTime();
+        System.out.println("ArrayList Insertion Time: " + (end - start));
+
+        start = System.nanoTime();
+        for (int i = 0; i < n; i++) {
+            arrayList.get(i);
+        }
+        end = System.nanoTime();
+        System.out.println("ArrayList Retrieval Time: " + (end - start));
+
+
+        // LinkedList
+        List<Integer> linkedList = new LinkedList<>();
+        start = System.nanoTime();
+
+        for (int i = 0; i < n; i++) {
+            linkedList.add(i);
+        }
+        end = System.nanoTime();
+        System.out.println("LinkedList Insertion Time: " + (end - start));
+
+        start = System.nanoTime();
+        for (int i = 0; i < n; i++) {
+            linkedList.get(i);
+        }
+        end = System.nanoTime();
+        System.out.println("LinkedList Retrieval Time: " + (end - start));
+    }
+}
