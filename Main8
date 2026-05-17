@@ -1,0 +1,8 @@
+class Main {
+    public static void main(String[] args) {
+        int a=9;
+        int b=90;
+        
+        System.out.println("Start small. Ship something."+(a+b));
+    }
+}
