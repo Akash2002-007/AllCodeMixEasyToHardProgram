@@ -1,0 +1,20 @@
+class Main14 {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter The First Number");
+            int n=sc.nextInt();
+            
+            System.out.println("Enter the Second number");
+            int n1=sc.nextInt();
+            if(n>n1){
+                System.out.println(n+"is large number");
+            }
+            else{
+                System.out.println(n1+"is largesr");
+            }
+        
+        
+    }
+}
+
+
