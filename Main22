@@ -1,0 +1,14 @@
+package com.nit;
+
+public class Main22 {
+		static void checkaAge(int Age) {
+			 if(Age<18) {
+				 throw new ArithmeticException("Not eligiable");
+			 }
+			 System.out.println("Eligiable");
+		}
+		public static void main(String[] age) {
+			checkaAge(19);
+		}
+    
+}
