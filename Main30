@@ -1,0 +1,17 @@
+Class Main30{
+    public static void main(String[] args) {
+        int arr[]={2,8,4,3,9,8,9,7,8,89,90};
+        int first=Integer.MIN_VALUE;
+        int secondLargest=Integer.MIN_VALUE;
+        for(int num:arr){
+            if(num>first){
+                secondLargest=first;
+                first=num;
+                
+            }else if(num>secondLargest && num!=first){
+                secondLargest=num;
+            }
+        }
+        System.out.println("Start small. Ship something."+secondLargest);
+    }
+}
