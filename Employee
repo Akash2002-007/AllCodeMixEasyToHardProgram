@@ -1,0 +1,30 @@
+package com.nit.pattern;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Employee {
+     int a;
+	String b ;
+	
+	public Employee(int a, String b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+
+
+
+}
+
+class Test{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList<Employee> list=new ArrayList<>(
+		Arrays.asList(new Employee(1,"Sam"),
+	 new Employee(1,"Sam")));
+
+	
+   System.out.println(list.size());
+}
+}
