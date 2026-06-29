@@ -1,0 +1,16 @@
+package com.nit;
+
+public class Alphabetlowe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+          String str="I HATE YOU SEXREEL ";
+            str=str.toLowerCase();
+         for(int i=0;i<str.length();i++) {
+       	      char ch=str.charAt(i);
+        	     System.out.print(ch);
+          }
+          
+          }
+
+}
