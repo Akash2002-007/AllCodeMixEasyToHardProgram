@@ -1,0 +1,22 @@
+package com.nit;
+
+public class RemovieDuplicate{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    String str="banana";
+//    String result=" ";
+//    
+//    for(int i=0;i<str.length();i++) {
+//    	char ch=str.charAt(i);
+//    	
+//    	if(result.indexOf(ch)==-1) {
+//    		result=result+ch;
+//    		
+//    	}
+//    	System.out.println(result);
+//    }
+    str.chars().distinct().forEach(ch->System.out.println((char)ch));
+	}
+
+}
