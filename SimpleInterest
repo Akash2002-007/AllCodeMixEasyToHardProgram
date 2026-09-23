@@ -1,0 +1,19 @@
+package JavaDSA;
+
+public class SimpleInterest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         int p=7;
+         int r=8;
+         int t=9;
+         int si=0;
+         int sum=0;
+         
+         si=p*r*t/100;
+         sum=si+p;
+         System.out.println(si);
+         System.out.println(sum);
+	}
+
+}
