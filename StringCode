@@ -1,0 +1,16 @@
+package com.dailypdf;
+
+public class StringCode {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Integer a=127;
+      Integer b=127;
+      System.out.println(a==b); 
+      
+      Integer x=128;
+      Integer y=128;
+      System.out.println(x==y);
+	}
+
+}
