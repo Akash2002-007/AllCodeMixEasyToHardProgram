@@ -1,0 +1,18 @@
+package src.condition;
+
+import java.util.Scanner;
+
+public class TakeInputCh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the String");
+      String s=sc.nextLine();
+      
+      char ch=s.charAt(0); 
+      
+      System.out.println(""+Character.toUpperCase(ch));
+	}
+
+}
