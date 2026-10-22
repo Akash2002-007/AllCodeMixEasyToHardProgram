@@ -1,0 +1,15 @@
+package com.nit.array;
+
+public class A {
+
+	 void show() {
+		System.out.println("I");
+	}
+class B extends  A {
+	 void show() {
+		 System.out.println("Love");
+	 }
+	 
+
+}
+}
