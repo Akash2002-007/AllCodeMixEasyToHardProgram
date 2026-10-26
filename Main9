@@ -1,0 +1,11 @@
+class Main {
+    public static void main(String[] args) {
+
+        int num=10;
+        int mul=2;
+        for(int i=1;i<=num;i++){
+         System.out.println("Try clicking the Run button."+mul* i);   
+        }
+        
+    }
+}
