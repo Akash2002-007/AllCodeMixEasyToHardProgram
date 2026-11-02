@@ -1,0 +1,21 @@
+package src.com.nit;
+
+import java.util.HashSet;
+
+public class FindDuplicate9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int a[]= {20,30,40,40,60,50,80,50};
+       
+       HashSet<Integer> set=new HashSet<>();
+       HashSet<Integer> setio=new HashSet<>();
+       for(int num:a) {
+    	   if(!set.add  (num)) {
+    		   setio.add  (num);
+    	   }
+       }
+       System.out.println(" "+setio);
+	}
+
+}
