@@ -1,0 +1,48 @@
+package src.com.nit;
+
+public class package src.com.nit;
+
+public class Frequency898 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     String str= "JavaProgramming";
+    int  count=0;
+        
+    char ch='a';
+    
+    for(int i=0;i<str.length();i++) {
+    	
+    	if(str.charAt(i)==ch) {
+    		count++;
+    		
+    	}
+    	
+    }
+    System.out.println(count+" "+ch);
+    
+	}
+
+}
+ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     String str= "JavaProgramming";
+    int  count=0;
+        
+    char ch='a';
+    
+    for(int i=0;i<str.length();i++) {
+    	
+    	if(str.charAt(i)==ch) {
+    		count++;
+    		
+    	}
+    	
+    }
+    System.out.println(count+" "+ch);
+    
+	}
+
+}
