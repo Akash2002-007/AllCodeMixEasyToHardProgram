@@ -1,0 +1,21 @@
+package com.nit.string;
+
+public class CountUpper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      String str="Java";
+      int upper=0,lower=0;
+      
+      for(char ch:str.toCharArray()) {
+    	  if(Character.isUpperCase(ch)) {
+    		  upper++;
+    	  }else {
+    		  lower++;
+    	  }
+      }
+      System.out.println(" "+upper);
+     System.out.println(" "+lower);
+	}
+
+}
