@@ -1,0 +1,33 @@
+package com.nit.Array;
+
+public class StringNonRepeat {
+     public static void main(String[] args) {
+    	 String str="Programming";
+    	 String a="";
+    	 
+    	 for(int i=0;i<str.length();i++) {
+    		 int count=0;
+    		 for(int j=0;j<str.length();j++) {
+    			    if(str.charAt(i)==str.charAt(j)) {
+    			    	count++;
+    			    }
+    		 }
+
+    		 if(count>1) {
+    			 
+    			 boolean alread=false;
+    			 for(int k=0;k<i;k++) {
+    				 if(str.charAt(i)==str.charAt(k)) {
+    					 alread=true;
+        				 break;
+    				 }
+    				
+    			 }
+    			 if(!alread) {
+    	    		  System.out.println(str.charAt(i));
+    	    	}
+    		 }
+    	
+    	 }
+     }
+}
